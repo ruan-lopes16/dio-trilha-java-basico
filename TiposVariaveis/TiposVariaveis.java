@@ -18,7 +18,7 @@ public class TiposVariaveis {
         long cpf = 98765432109L; // se começar com zero, talvez tenha que ser outro tipo - String // L ou l, para representar q é um valor long
         float pi = 3.14F; // F ou f, para representar float
         double salario = 2500.00; // forma correta para mostrar salario
-
+    //
         short numeroCurto = 1;  // +30000
         int numeroNormal = numeroCurto; // isso da certo // inteiro comporta um curto
 
