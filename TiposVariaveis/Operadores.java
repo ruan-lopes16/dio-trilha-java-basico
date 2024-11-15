@@ -1,4 +1,5 @@
 import java.util.Date; // importando PACKAGE - para não dar erro no Date
+import java.util.Locale;
 
 public class Operadores {
     public static void main ( String [] args ){
@@ -88,5 +89,89 @@ public class Operadores {
             resultado = "falso";
         */
         System.out.println(resultado); // falso
+
+    // Relacionais
+    // verificação de strings
+        String nomeUm = "Ruan";
+        String nomeDois = "Ruan";
+        String nomeTres = new String("Ruan"); // criando novo objeto ou textos
+
+        System.out.println(nomeUm == nomeDois); // true
+        System.out.println(nomeUm == nomeTres); // false
+        System.out.println(nomeUm.equals(nomeTres)); // true // metodo .equals() - compara conteudos
+    //
+        String nome1 = "JAVA";
+        String nome2 = "JAVA";
+
+        System.out.println(nome1 == nome2); //true
+
+        String nome3 = new String("JAVA"); // novo objeto de texto
+        System.out.println(nome1 == nome3); //false - sao objetos diferentes
+
+        String nome4 = nome3;
+        System.out.println(nome3 == nome4); //true
+
+        //equals na parada
+        System.out.println(nome1.equals(nome2)); // true
+        System.out.println(nome2.equals(nome3)); // true
+        System.out.println(nome3.equals(nome4)); // true
+
+        // verificação de numeros
+        int numero1 = 1;
+        int numero2 = 2;
+
+        boolean simNao = numero1 == numero2;
+
+        if(numero1 < numero2){
+            System.out.println("A nossa condição é verdadeira!");
+        }
+        System.out.println("numeroUm é igual a numeroDois? " + simNao); // falso
+
+        simNao = numero1 != numero2;
+        System.out.println("numeroUm é diferente a numeroDois? " + simNao); // true
+
+        simNao = numero1 > numero2;
+        System.out.println("numeroUm é maior que numeroDois? " + simNao); // false
+
+        // comparacoes
+        if(numero1 > numero2) {
+            System.out.print("Numero 1 maior que numero 2\n");
+        }
+        if(numero1 <numero2) {
+            System.out.print("Numero 1 menor que numero 2\n");
+        }
+        if(numero1 >= numero2) {
+            System.out.print("Numero 1 maior ou igual que numero 2\n");
+        }
+        if(numero1 <= numero2) {
+            System.out.print("Numero 1 menor ou igual que numero 2\n");
+        }
+        if(numero1 != numero2) {
+            System.out.print("Numero 1 é diferente de numero 2\n");
+        }
+
+    // Lógicos
+        boolean condicao1 = true;
+        boolean condicao2 = false;
+
+        if ( condicao1 && condicao2 ) {
+            System.out.println("As duas condições são verdadeiras\n"); // false
+        }
+
+        if ( condicao1 || condicao2 ) {
+            System.out.println("Umas das condições é verdadeira\n"); // true
+        }
+
+        System.out.println("Fim");
+
+        // lógico avançado
+        int num1 = 1;
+        int num2 = 1;
+
+        if ( num1 == 2 && num2 ++ == 2 ){
+            System.out.println("As duas condições são verdadeiras");
+        }
+        System.out.println("O número 1 agora é " + num1);
+        System.out.println("O número 2 agora é " + num2);
     }
 }
