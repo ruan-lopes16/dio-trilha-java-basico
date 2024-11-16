@@ -1,5 +1,5 @@
 import java.util.Date; // importando PACKAGE - para não dar erro no Date
-import java.util.Locale;
+
 
 public class Operadores {
     public static void main ( String [] args ){
