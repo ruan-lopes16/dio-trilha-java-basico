@@ -9,7 +9,7 @@ public class Usuario {
         System.out.println("Canal atual: " + smartTv.canal);
         System.out.println("Volume atual: " + smartTv.volume);
 
-        System.out.println("Novo status:\n");
+        System.out.println("\nNovo status:");
 
         smartTv.ligar();
         System.out.println("TV ligada? " + smartTv.ligada);
