@@ -16,7 +16,7 @@ public class Contador {
             // chamando contagem
             contar(num1, num2);
 
-        } catch (ParametrosInvalidosException e) {
+        } catch (ParametrosInvalidosException e) { // exceção
             // mensagem exceção
             System.out.println("ERRO: " + e.getMessage());
 
