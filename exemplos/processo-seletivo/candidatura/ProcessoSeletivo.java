@@ -48,7 +48,7 @@ public class ProcessoSeletivo {
 
     // metodo auxiliar
     static boolean atender() {
-        return new Random().nextInt(3) == 1; // se o valor entre 1 e 3, for igual a 1, a pessoa atendeu
+        return new Random().nextInt(3) == 1; // se o valor entre 1 e 3, for igual a 1, a cadastro.Pessoa atendeu
 
     }
 
