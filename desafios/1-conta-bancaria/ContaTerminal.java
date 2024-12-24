@@ -1,10 +1,10 @@
-// conhecer e importar a classe Scanner
+// conhecer e importar a classe equipamentos.digitalizadora.Scaner
 import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
 
-        Scanner scanner = new Scanner(System.in); // chamando classe Scanner para minha função
+        Scanner scanner = new Scanner(System.in); // chamando classe equipamentos.digitalizadora.Scaner para minha função
 
         System.out.println("--------------------------------"); // saudação
         System.out.println("Bem-vindo(a) ao banco DIO JAVA!");

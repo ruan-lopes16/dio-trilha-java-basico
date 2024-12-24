@@ -1,3 +1,5 @@
+package repeticao;
+
 public class ExemploFOR {
 
     public static void main ( String[] args ) {

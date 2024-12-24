@@ -26,7 +26,7 @@ public class AboutMe {
 //        System.out.println("Minha altura é " + altura + "cm ");
 //    }
 
-    // classe para entrada de dados - Scanner
+    // classe para entrada de dados - equipamentos.digitalizadora.Scaner
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US); // vira um novo objeto
 

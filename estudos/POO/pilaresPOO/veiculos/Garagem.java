@@ -1,3 +1,5 @@
+package veiculos;
+
 // classe que vai utilizar um carro e uma moto
 public class Garagem {
     public static void main(String[] args) {

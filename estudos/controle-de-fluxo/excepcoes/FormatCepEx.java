@@ -1,3 +1,5 @@
+package excepcoes;
+
 public class FormatCepEx {
     public static void main( String[] args ) {
         try {

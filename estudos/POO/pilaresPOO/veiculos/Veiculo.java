@@ -1,3 +1,5 @@
+package veiculos;
+
 // classe abstrata, pois não sei como as coisas de fato acontecem - mas todos veiculos precisará...
 public abstract class Veiculo {
 
