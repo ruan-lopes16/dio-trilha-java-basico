@@ -1,4 +1,4 @@
-package escola;
+package src.escola;
 
 public class Aluno {
     /*
