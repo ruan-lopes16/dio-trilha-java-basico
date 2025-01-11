@@ -1,12 +1,12 @@
 package temas.filas;
 
-public class No {
+public class No<T> {
 
-    private Object object; // posso colocar qlqr obejto utilizando a classe Object de java.util
-    private No refNo;
+    private T object; // posso colocar qlqr obejto utilizando a classe Object de java.util <- antes. AGORA -> GENERICO
+    private No<T> refNo;
 
     // construtor
-    public No(Object object){ // object - conteudo do nó
+    public No(T object){ // object - conteudo do nó
         this.refNo = null;
         this.object = object;
 
@@ -21,7 +21,7 @@ public class No {
     public Object getObject() {
         return object;
     }
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 

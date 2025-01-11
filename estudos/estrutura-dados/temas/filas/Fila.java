@@ -1,8 +1,8 @@
 package temas.filas;
 
-public class Fila {
+public class Fila<T> { // a partir do momento que eu instanciar o primeiro objeto/nó - vai reconhecer que só poderei adc aquele tipo de objeto/no
 
-    private No refNoEntradaFila; // entrando na fila pelo final
+    private No<T> refNoEntradaFila; // entrando na fila pelo final
 
     // construtor
     public Fila() {
@@ -17,14 +17,15 @@ public class Fila {
     }
 
     // enfileirar
-    public void enqueue(No novoNo){ // recebo um novo nó, novo nó entra na fila
+    public void enqueue(T object){ // recebo um novo nó, novo nó entra na fila
+        No novoNo = new No(object); // embutindo
         novoNo.setRefNo(refNoEntradaFila); // a referencia de novo nó, era o antigo ultimo nó. Agora de ultimo é este que acabou de entrar
         refNoEntradaFila = novoNo; // agora a referencia tem q ser desse novo nó
 
     }
 
     // retorna o primeiro da fila
-    public No first(){
+    public T first(){
         if(!this.isEmpty()){ //  se a fila nao estiver vazia
 
             No primeiroNo = refNoEntradaFila; // o primeiro nó recebe a referencia de entrada da fila
@@ -36,13 +37,13 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject(); // casting
         }
         return null; // se estiver vazia retorna null
     }
 
     // desenfileirar
-    public No dequeue(){
+    public T dequeue(){
         if(!this.isEmpty()){ //  se a fila nao estiver vazia
 
             No primeiroNo = refNoEntradaFila; // o primeiro nó recebe a referencia de entrada da fila
@@ -58,7 +59,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject(); // casting
         }
         return null; // se estiver vazia retorna null
     }
